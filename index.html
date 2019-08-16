@@ -1,0 +1,899 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/ragasave/ragasave_js@latest/src/ragasave.min.js"></script>
+
+
+</head>
+<body>
+    <rc-mini-chat>
+        <rc-chat-head  tabindex="1" data-toggle="collapse" data-target="#rcMiniChat" aria-expanded="false" aria-controls="rcMiniChat">
+            
+            <left>
+                <profile-icon>
+
+                </profile-icon>
+                <profile-name tabindex="1">user name</profile-name>
+            
+            </left>
+            <right>
+                <chat-voice tabindex="2"></chat-voice>
+                <chat-close tabindex="3"></chat-close>
+                <chat-video tabindex="4"></chat-video>
+                <chat-option tabindex="5"></chat-option>
+            </right>
+        </rc-chat-head>
+
+        <rc-chat-main  class="collapse" id="rcMiniChat">
+            <rc-chat-body>
+                
+            </rc-chat-body>
+            <rc-chat-footer>
+                
+            </rc-chat-footer>
+        </rc-chat-main>
+    </rc-mini-chat>
+
+
+    <rc-card >
+        <div rc-chat rc-app class="" role='sub-window'>
+
+            <rc-chat-left-panel>
+                <div rc-chat-head>            
+                    <search-bar>
+                        <input type="text" placeholder="Serach">
+                    </search-bar>    
+                    <!-- <profile-icon ></profile-icon>
+                    <profile-name>Rahul Vamra From Thane Bhim </profile-name> -->
+                    <!-- <chat-setting></chat-setting> -->
+                </div>
+                <div rc-chat-body>
+                    <conversation-list>
+                                                <user-list data-id="0" new-message="0">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Rahul Varma">Rahul Varma </profile-name>
+                        </user-list>
+                                                <user-list data-id="1" new-message="1">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Aradhana Varma">Aradhana Varma </profile-name>
+                        </user-list>
+                                                <user-list data-id="2" new-message="2">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Ashaka Varma">Ashaka Varma </profile-name>
+                        </user-list>
+                                                <user-list data-id="3" new-message="3">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="ofline" data-name="Gangaram Varma">Gangaram Varma </profile-name>
+                        </user-list>
+                                                <user-list data-id="4" new-message="4">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Rajkumari Varma">Rajkumari Varma </profile-name>
+                        </user-list>
+                                                <user-list data-id="5" new-message="5">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Sumit Paswan">Sumit Paswan </profile-name>
+                        </user-list>
+                                                <user-list data-id="6" new-message="6">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="offline" data-name="Rohan Pandey">Rohan Pandey </profile-name>
+                        </user-list>
+                                                <user-list data-id="7" new-message="7">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Rohit">Rohit </profile-name>
+                        </user-list>
+                                                <user-list data-id="8" new-message="8">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="ofline" data-name="Rishab Sir">Rishab Sir </profile-name>
+                        </user-list>
+                                                <user-list data-id="9" new-message="9">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Sandeep">Sandeep </profile-name>
+                        </user-list>
+                                                <user-list data-id="10" new-message="10">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="ofline" data-name="Atul">Atul </profile-name>
+                        </user-list>
+                                                <user-list data-id="11" new-message="11">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="ofline" data-name="Saurabh Yadav">Saurabh Yadav </profile-name>
+                        </user-list>
+                                                <user-list data-id="12" new-message="12">
+                            <profile-icon icon-x></profile-icon>
+                            <profile-name status="online" data-name="Ajay Yadav">Ajay Yadav </profile-name>
+                        </user-list>
+                                            </conversation-list>
+                </div>
+            </rc-chat-left-panel>
+
+            <rc-chat-right-panel>
+                <div rc-chat-head>
+                    <profile-icon></profile-icon>
+                    <profile-name status="online">Rahul Vamra From Thane Bhim </profile-name>
+                </div>
+                <div rc-chat-body>
+                    <message-box rc-style="inset-shadow">
+                        <received-msg at="10:30 PM">Hii</received-msg>
+                        <sended-msg at="10:31 PM">Hii Iam Rahul Varma from Thane Hahaha Hii Iam Rahul Varma from Thane Hahaha</sended-msg>
+                        <received-msg at="10:30 PM">Hii</received-msg>
+                        <sended-msg at="10:31 PM">Hii Iam Rahul Varma from Thane Hahaha</sended-msg>
+                        <received-msg at="10:30 PM">Hii</received-msg>
+                        <received-msg at="10:30 PM">Hii Iam Rahul Varma from Thane Hahaha Hii Iam Rahul Varma from Thane Hahaha</received-msg>
+                        <received-msg at="10:30 PM">Hii</received-msg>
+                        <sended-msg at="10:31 PM">Hiii</sended-msg>
+                        <sended-msg at="10:31 PM">Hiii</sended-msg>
+                    </message-box>
+                    
+                    <message-input >
+                        <textarea rc-style="inset-shadow" placeholder="Write Message"></textarea>
+                    </message-input>
+                </div>
+                <div rc-chat-footer>    
+                </div>
+            </rc-chat-right-panel>
+    
+        </div>
+    </rc-card>
+
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+        
+
+
+        message-box{
+            margin : 0px 5px;
+            display: block;
+            height: 100%;
+            padding : 10px;
+            overflow : auto;
+        }
+        received-msg::after, sended-msg::after {
+            top: 100%;
+            width : 100%;
+            min-width:50px;
+            display: block;
+            /* position: absolute; */
+            content: attr(at);
+        }
+
+        sended-msg::after {
+            text-align: right;
+        }
+
+        received-msg::after {
+            text-align: right;
+        }
+        message-input{
+            height: 50px;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            left: 0px;
+            padding: 10px 10px 10px 10px;        
+        }
+
+        message-input textarea {
+            background-color: rgba(0,0,0,0.2);
+            border: 0px;
+            width: 100%;
+            padding: 5px 10px;
+            border-radius: 0px;
+            height: 32px;
+            resize : none;
+            overflow : hidden;
+            margin: 0px 0px;
+            color : rgba(238, 238, 238, 0.6392156862745098);
+            outline : none;
+        }
+        message-input textarea::placeholder{
+            color : rgba(238, 238, 238, 0.6392156862745098)
+        }
+        
+        received-msg{
+            float : left;
+            clear : both;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.19);
+        }
+        sended-msg{
+            float : right;
+            clear : both;
+            box-shadow : -1px 1px 2px rgba(0, 0, 0, 0.19);
+        }
+        received-msg,
+        sended-msg{
+            color: #fff;
+            display: block;
+            max-width : 55%;
+            background: rgba(238, 238, 238, 0.25);
+            padding: 3px 10px;
+            border-radius: 3px;
+            position: relative;
+        }
+        received-msg:not(:first-child),
+        sended-msg:not(:first-child){
+            margin-top : 3px;
+        }
+        
+        message-box sended-msg:first-child::before,
+        received-msg + sended-msg::before{
+            content: '';
+            position: absolute;
+            right: -7px;
+            top: 0px;
+            width: 7px;
+            height: 6px;
+            background: inherit;
+            border: inherit;
+            border-radius: 0px 0px 100% 0px; 
+        }
+        message-box received-msg:first-child::before,
+        sended-msg + received-msg::before{
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 0px;
+            width: 7px;
+            height: 6px;
+            background: inherit;
+            border: inherit;
+            border-radius: 0px 0px 0px 100%; 
+        }
+        message-box received-msg:first-child,
+        sended-msg + received-msg{
+            /* margin-top : 15px !important; */
+            border-radius: 0px 4px 4px 4px;
+        }
+        message-box sended-msg:first-child,
+        received-msg + sended-msg{
+            border-radius: 4px 0px 4px 4px;
+            /* margin-top : 15px !important;         */
+        }
+
+
+
+        body{
+            width : 100vw;
+            height : 100vh;
+            display : block;
+            padding  : 4vh 4vw;
+        }
+
+        left {
+            float : left;
+        }
+        right {
+            float : right;
+        }
+        right,left{
+            display : block;
+            height : 0px;
+        }
+        [icon-s] {
+            width : 16px;
+            height : 16px;
+            font-size : 16px;
+        }
+        [icon-m] {
+            width : 26px;
+            height : 26px;
+        }
+        [icon-x] {
+            width : 36px;
+            height : 36px;
+        }
+
+        [rc-style~="inset-shadow"]{
+            box-shadow: inset 0px 0px 11px -4px rgba(0, 0, 0, 0.55);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 4px;
+        }
+        rc-card{
+            padding: 15px 15px;
+            box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+            border: 0;
+            font-weight: 400;
+            border-radius: 4px;
+            display: block;
+            margin: auto;
+        }
+
+
+        [rc-chat] {
+            width : 100%;
+            height : 100%;
+            display : table;
+            background-image: -webkit-linear-gradient(74deg, #303F9F 30%, #2196F3);
+            background-image: linear-gradient(16deg, #303F9F 30%, #2196F3);
+        }
+        [rc-chat] [rc-chat-head]{
+            height : 90px;
+            border-radius: 4px 4px 0px 0px ;
+        } 
+
+        [rc-chat] [rc-chat-head], 
+        [rc-chat] [rc-chat-body]{
+            /* box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12); */
+            border: 0;
+            font-weight: 400;
+            display: block;
+            margin: auto;
+        }
+        [rc-chat] [rc-chat-head], 
+        [rc-chat] [rc-chat-body]{
+            /* display : table; */
+            width : 100%;
+        }
+        
+        [rc-chat][rc-app] conversation-list, 
+        [rc-chat][rc-app] rc-chat-right-panel [rc-chat-body]
+        {
+            height : calc(100vh - 90px);
+        }
+        [rc-chat] [rc-chat-body]{
+            padding: 0px 5px 15px 5px;
+        }
+        
+        [rc-chat][rc-app] [rc-chat-body]{
+            padding: 0px;
+        }
+        [rc-chat] rc-chat-right-panel [rc-chat-body]{
+            position: relative;
+            padding-bottom: 50px !important;
+        }
+        [rc-chat] [rc-chat-head]{
+            padding: 15px 5px;
+        }
+        [rc-chat] [rc-chat-body] {
+
+            /* margin-top : 3px; */
+            border-radius: 0px 0px 4px 4px ;
+        }
+        [rc-chat] rc-chat-left-panel{
+            width : 30%;
+        }
+
+        [rc-chat] rc-chat-right-panel{
+            width : 70%;
+            /* padding-left : 10px;  */
+        }
+        [rc-chat] rc-chat-left-panel,
+        [rc-chat] rc-chat-right-panel{
+            /* height : 100%; */
+            float : left;
+            display : block;
+            background-image: -webkit-linear-gradient(74deg, #303F9F 30%, #2196F3);
+            background-image: linear-gradient(16deg, #303F9F 30%, #2196F3);
+        }
+        [rc-chat] profile-icon{
+            height : 50px;
+            margin : 5px 5px 5px 15px;
+            width : 50px;
+        } 
+        [rc-chat] profile-icon{
+            background-color : #eee;
+            border-radius : 50%;
+            margin : 5px 5px;
+            float : left;
+            cursor : pointer;
+
+        }
+        [rc-chat] profile-name{
+            /* background-color : #eee; */
+            color : #f8f8f8;
+            border-radius : 2px;
+            min-width : 100px;
+            max-width : 200px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height : 22px;
+            padding : 0px 5px;
+            margin : 19px 5px;
+            float : left;
+            cursor : pointer;
+            overflow :hidden;
+        }
+        [rc-chat] rc-chat-left-panel chat-setting{
+            border-radius: 2px;
+            width: 36px;
+            height: 36px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 0px 5px;
+            font-size: 22px;
+            margin: 12px 5px 12px 5px;
+            text-align: center;
+            float: right;
+            cursor: pointer;
+            overflow: hidden;
+            color : #f8f8f8;
+        }
+        [rc-chat] rc-chat-left-panel chat-setting::after{
+            content: "\2699";            
+
+        }
+        rc-chat-left-panel search-bar{
+            display : block;
+            margin : 5px 5px;
+        }
+        rc-chat-left-panel search-bar{
+            margin : 12px 5px;
+        }
+        [rc-chat] rc-chat-left-panel search-bar input::-webkit-input-placeholder,
+        [rc-chat] rc-chat-left-panel search-bar input::-webkit-input-placeholder{
+            color : rgba(238, 238, 238, 0.6392156862745098)
+        }
+        [rc-chat] rc-chat-left-panel search-bar input::-moz-placeholder{
+            color : rgba(238, 238, 238, 0.6392156862745098)
+        }
+        [rc-chat] rc-chat-left-panel search-bar input:-ms-input-placeholder,
+        [rc-chat] rc-chat-left-panel search-bar input:-ms-input-placeholder{
+            color : rgba(238, 238, 238, 0.6392156862745098)
+        }
+        [rc-chat] rc-chat-left-panel search-bar input::placeholder,
+        [rc-chat] rc-chat-left-panel search-bar input::placeholder{
+            color : rgba(238, 238, 238, 0.6392156862745098)
+        }
+        [rc-chat] rc-chat-left-panel search-bar input,
+        [rc-chat] rc-chat-left-panel search-bar input {
+            width: 100%;
+            background-color : transparent;
+            /* background-color: rgba(255, 255, 255, 0.05); */
+            border-radius: 40px;
+            color: rgba(238, 238, 238, 0.6392156862745098);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: inset 0px 0px 11px -4px rgba(0, 0, 0, 0.55);
+            padding: 5px 15px 5px 15px;
+            outline:none; 
+
+        }
+
+        rc-chat-left-panel conversation-list{
+            display : block;
+            /* width : 100%; */
+            height : 100%;
+            padding: 0px 5px;
+            border-radius: 4px;
+            color: rgba(238, 238, 238, 0.6392156862745098);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            box-shadow: inset 0px 0px 11px -4px rgba(0, 0, 0, 0.55);
+            margin : 0px 5px;
+        }
+        rc-chat-left-panel conversation-list user-list{
+            display: inline-block;
+            width: 100%;
+            float : left;
+        }
+        rc-chat-left-panel conversation-list user-list:not(:last-child){
+            box-shadow : 0px 1px 1px rgba(0,0,0,0.08);
+
+        }
+        [rc-chat] profile-icon[icon-x], [rc-chat] [rc-chat-head] profile-icon[icon-x] {
+            margin: 12px 5px;
+        }
+        [rc-chat] profile-icon[icon-m], [rc-chat] [rc-chat-head] profile-icon[icon-m] {
+            margin: 17px 5px;
+        }
+        [rc-chat] profile-icon[icon-s], [rc-chat] [rc-chat-head] profile-icon[icon-s] {
+            margin: 22px 5px;
+        }
+
+        profile-name::after{
+            width : 100%;
+            content: attr(status);
+            float: left;
+            color: #eee;
+            font-size: 10px;
+        }
+        profile-name[status] {
+            height: 38px;
+            margin: 11px 5px;
+        }
+        user-list[new-message]::after{
+            content: attr(new-message);
+            padding : 2px 4px 0px 4px;
+            color: #ff0a0a;
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            display: table;
+            height: 20px;
+            min-width: 20px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-align: center;
+            background: #fff;
+            margin: 20px 0px;
+        }
+        user-list {
+            position: relative;
+            height: 70px;
+            padding: 5px 0px;
+            cursor: pointer;
+        }
+
+        [rc-chat] *{
+            font-family: cursive;
+            font-size : 14px;
+        }
+        [rc-chat] :before,
+        [rc-chat] :after{
+            font-size : 10px;
+        }
+
+
+        @media (max-width:1050px){
+            [rc-chat] rc-chat-left-panel{
+                width : 40%;
+            }
+            [rc-chat] rc-chat-right-panel{
+                width : 60%;
+            }
+        }
+        @media (max-width:768px){
+            [rc-chat] rc-chat-left-panel{
+                width : 100%;
+
+            }
+
+            [rc-chat] rc-chat-right-panel{
+                width : 100%;
+                display : none;
+                /* padding-left : 10px;  */
+            }
+            body{
+                padding : 0px;
+                margin : 0px;
+            }
+            rc-card{
+                padding : 0px;
+            }
+            [rc-chat] [rc-chat-head] {
+                height : 65px ;
+                padding : 0px ;
+            }
+            [rc-chat] [rc-chat-head] search-bar{
+                margin : 0px;
+                padding : 13px 10px;
+            }
+            [rc-chat] [rc-chat-body] {
+                padding : 0px ;
+            }
+            [rc-chat] [rc-chat-body] conversation-list{
+                margin : 0px ;
+                border-radius : 0px;
+            }
+            [rc-chat] [rc-chat-body] message-box{
+                margin : 0px;
+                border-radius : 0px;
+            }
+            [rc-chat] user-list{
+                height : 60px;
+                padding : 10px 5px
+            }
+            [rc-chat] profile-icon{
+                width : 40px ;
+                height: 40px ; 
+                margin : 0px 0px !important;
+            }
+            [rc-chat] profile-name{
+                margin : 0px 5px 0px 5px; 
+            }
+            user-list[new-message]::after{
+                padding: 2px 3px;
+                margin: 12.5px 0px;
+                right: 5px;
+                color: green;
+                height: 15px;
+                min-width: 15px;
+                font-size: 10px;            
+            }
+            [rc-chat] rc-chat-right-panel [rc-chat-head] {
+                padding : 12px 10px 
+            }
+            [rc-chat] message-box{
+                
+            }
+            
+            [rc-chat] *{
+                font-size : 12px;
+            }
+            
+            [rc-chat] :before,
+            [rc-chat] :after{
+                font-size : 9px;
+            }
+            
+            [rc-chat][rc-app] conversation-list,
+            [rc-chat][rc-app] rc-chat-right-panel [rc-chat-body] {
+                height : calc(100vh - 65px);
+            }
+        }
+
+
+        input{
+            padding : 10px  !important;
+        }
+
+
+
+        body{
+            padding : 0px;
+            margin : 0px;
+        }
+        rc-card{
+            padding :0px;
+        }
+        
+        [rc-app]{
+            height : 100vh;
+            width : 100vw;
+        }
+        [rc-chat] conversation-list, [rc-chat] rc-chat-right-panel [rc-chat-body]{
+            height : 350px ;
+            overflow : auto;
+        }
+
+
+
+
+        rc-mini-chat{
+            position : fixed;
+            display : none;
+            bottom : 0px;
+            right : 20px;
+            border : 1px solid rgba(0,0,0,0.13);
+            box-shadow : -1px -1px 3px 0px rgba(0,0,0,0.12) 
+        }
+        rc-mini-chat [rc-chat-head]:focus,
+        rc-mini-chat [rc-chat-head]:active{
+            border : 1px solid 
+        }
+        rc-mini-chat rc-chat-main{
+            display : block;
+            width : 100%;
+            height : 300px;
+            position : relative;
+             
+        }
+        rc-mini-chat rc-chat-body{
+            display : block;
+            width : 100%;
+            height : 100%;
+            padding: 10px 10px 40px 10px; 
+        }
+        rc-mini-chat rc-chat-footer{
+            position : absolute;
+            bottom : 0px;
+        }
+        rc-mini-chat [rc-chat-head],
+        rc-mini-chat rc-chat-footer {
+            padding : 8px;
+            width : 16rem;
+            height : 40px;
+            color : grey;
+            background-color : #eee;
+            font-size : 1.2em;
+            text-shadow : 0px 0px 1px rgba(0,0,0,0.40);
+            display : block;
+        }
+        rc-mini-chat [rc-chat-head] profile-icon{
+            width : 24px;
+            height : 24px;
+            margin : 0px px 0px 0px;
+            border-radius : 50%;
+            /* float : left; */
+            background-color : #fff;
+            display : inline-block;
+        }
+        
+        rc-mini-chat [rc-chat-head] chat-voice,
+        rc-mini-chat [rc-chat-head] chat-close,
+        rc-mini-chat [rc-chat-head] chat-video,
+        rc-mini-chat [rc-chat-head] chat-option{
+            width : 24px;
+            height : 24px;
+            margin : 0px 0px 0px 3px;
+            /* float : right; */
+            background-color : #fff;
+            /* clear : both; */
+            display : inline-block;
+        }
+        rc-mini-chat [rc-chat-head] profile-name{
+            font-size : 0.76em;
+            height : 24px;
+            padding : 0px 3px;
+            /* width : 80px; */
+            position : relative;
+            top : -7.5px; 
+            display : inline-block;
+            color : rgba(0,0,0,0.30);
+            text-shadow : 0px 0px 1px rgba(0,0,0,0.40);
+
+        }
+        [color=dark-pink]{
+            background-color : crimson;
+        }
+        [color=primary]{
+            background-color : blue;
+        }
+
+        :focus {
+            /* outline:none;  */
+            /* box-shadow: 0px 0px 0px 0.09em #A6C8FF ; */
+        }
+
+
+
+        /* deeppink */
+    
+    </style>
+    <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.2.1/dist/jquery.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+
+        var fn = {
+            
+            chatHead : Ragasave('[rc-chat] rc-chat-right-panel [rc-chat-head]'),
+            messageInputField : Ragasave('[rc-chat] rc-chat-right-panel [rc-chat-body] message-input textarea'),
+            panels : [Ragasave('rc-chat-left-panel'), Ragasave('rc-chat-right-panel')],
+            activePanel : 0,
+            activePanelNode (w){
+                return this.panels[w];
+            },
+            show : function(w){
+                if(window.innerWidth > 768){
+                    return false;
+                }
+                if(w == 0){
+                    this.panels[0].css({
+                        display : 'block'
+                    });
+                    this.panels[1].css({
+                        display : 'none'
+                    });
+                }else{
+                    this.panels[1].css({
+                        display : 'block'
+                    });
+                    this.panels[0].css({
+                        display : 'none'
+                    });
+                }
+                this.activePanelNode = this.panels[w];
+                this.activePanel = w;
+            },
+            hide : function(w){
+                if(w == 0){
+                    this.show(1);
+                }else{
+                    this.show(0);
+                }
+            },
+            user : function(id,option){
+                var user;
+                if(id instanceof Node){
+                    user= Ragasave(id);
+                }else{
+                    user= Ragasave('user-list[data-id="'+id+'"]');
+                }
+                if(!user.isEmpty()){
+                    var name = user.find('profile-name');
+                    if(option&& option == 'read'){
+                        user.removeAttr('new-message');
+                    }
+                    return {
+                        avatar : user.find('profile-icon').attr('data-src'),
+                        name : name.attr('data-name'),
+                        status : name.attr('status'),
+                        node : user
+                    }
+                }else{
+                    return false;
+                }
+            },
+            makeActiveTo : function(id){
+                var head = fn.chatHead,
+                    data = fn.user(id,'read');
+                if(!data){return false;}
+                head.find('profile-icon')
+                    .css({
+                        backgroundImage : 'url('+data.avatar+')'
+                    });
+                head.find('profile-name')
+                    .attr({status: data.status})
+                    .text(data.name);
+                fn.show(1);
+            },
+            html : {
+                sendedMsg : function(time, msg){
+                    return '<sended-msg at="'+time+'">'+msg+'</sended-msg>';
+                },
+                receivedMsg : function(time, msg){
+                    return '<receive-msg at="'+time+'">'+msg+'</receive-msg>';
+                }
+            }
+        };
+        fn.activePanelNode = fn.panels[0];
+        function panelAction(w){
+            return {
+                show : function(){
+                    fn.show(w);
+                },
+                hide:function(){
+                    fn.hide(w);
+                },
+                isActive : function(){
+                    if(fn.activePanel == w){
+                        return true;
+                    }else{
+                        return false;
+                    }
+                }
+            }
+        }
+        function rcChat(){
+            var _ = {};
+            _.messagePanel = function(){
+                return panelAction(1);            
+            };
+            _.frontPanel = function (){
+                return panelAction(0);
+            }
+            _.openChatOf = function (id){
+                fn.makeActiveTo(id);
+            }
+            _.open = function (id){
+                
+            }
+            
+            return _;
+        }
+
+        Ragasave(window).resize(function(){
+            if(window.innerWidth > 768){
+                fn.panels[0].show();
+                fn.panels[1].show();
+            }else{
+                fn.show(fn.activePanel);
+            }            
+        });
+        fn.messageInputField.on('keydown',function(event){
+            var keyCode = event.keyCode || event.which;
+            if(keyCode == 13){
+                event.preventDefault();
+                Ragasave('message-box').append(fn.html.sendedMsg("05:55 PM",this.value));
+                Ragasave('message-box')[0].scrollTop = Ragasave('message-box')[0].scrollHeight;
+                this.value = '';
+            }              
+        });
+        (function($){
+
+            $('user-list').click(function(){
+                var chat = new rcChat(); 
+                chat.openChatOf(this);
+            });
+            $(window).keyUp(function(event){
+                var chat = new rcChat(); 
+                var keyCode = event.keyCode || event.which;
+                if(keyCode == 8){
+                    if(!chat.frontPanel().isActive()){
+                        // chat.frontPanel().show();
+                    }
+                }
+            });
+        }(Ragasave));
+    </script>
+</body>
+</html>
